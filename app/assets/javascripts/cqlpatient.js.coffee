@@ -194,6 +194,7 @@ class CQL_QDM.CQLPatient
           # e.g. "Encounter, Performed: Face-to-Face Interaction" becomes
           # EncounterPerformed
           # TODO: this needs to be modified to look at the HQMF template OID instead of the description
+          console.log("test")  
           classname = dc.description.substr(0, dc.description.lastIndexOf(':'))
           # remove commas, slashes, and colons
           classname = classname.replace(/,/g, '').replace(/\//g, '').replace(/:/g, '')
